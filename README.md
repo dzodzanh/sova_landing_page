@@ -1,6 +1,6 @@
-# Sova — Landing Page
+# Hootz AI — Landing Page
 
-Marketing site for **Sova**, an iOS-first AI prank-video app ("Turn ideas and photos into AI videos
+Marketing site for **Hootz AI**, an iOS-first AI prank-video app ("Turn ideas and photos into AI videos
 in seconds"). Static HTML + CSS, no build step, no dependencies.
 
 ## Files
@@ -28,7 +28,7 @@ one clear CTA per section.
 
 - `[Company Name]`, `[Company Address]`, `[Governing jurisdiction]`, `[Effective date]` in
   `privacy.html` and `terms.html`.
-- Contact email `hello@sova.app` (used in the footer and legal pages) — swap for your real address.
+- Contact email `litilabs@outlook.com` (used in the footer and legal pages) — swap for your real address.
 - The App Store download buttons link to `#` — point them at your App Store URL once the app is live.
 - The legal pages are a starting **template**; have them reviewed by qualified legal counsel.
 
