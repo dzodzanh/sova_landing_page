@@ -30,29 +30,25 @@
   <div class="wrap">
     <article class="legal-doc">
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective date: [Effective date] · Last updated: [Effective date]</p>
+      <p class="meta">Effective date: July 18, 2026 · Last updated: July 18, 2026</p>
 
-      <div class="legal-note">
-        This Privacy Policy is a starting template tailored to an AI photo and video app. It is
-        not legal advice. Please review and adapt it with qualified legal counsel before publishing,
-        and replace every bracketed placeholder (for example [Company Name]) with your details.
-      </div>
-
-      <p>This Privacy Policy explains how [Company Name] ("Hootz AI", "we", "us", or "our") collects,
+      <p>This Privacy Policy explains how Anywhere Studio ("Hootz AI", "we", "us", or "our") collects,
         uses, and shares information when you use the Hootz AI mobile application and related services
         (the "Service"). By using the Service, you agree to the practices described here.</p>
 
       <h2>1. Information we collect</h2>
       <p>We aim to collect only what we need to operate the Service:</p>
       <ul>
-        <li><b>Content you provide.</b> Photos or images you upload, text prompts you enter, and the
-          videos or images you generate.</li>
+        <li><b>Content you provide.</b> Photos or images you upload (which may include photos of your
+          face), text prompts you enter, and the videos or images you generate. See Section 4 for how
+          we handle photos that contain faces.</li>
         <li><b>Purchase information.</b> Records of subscriptions, credit purchases, and transaction
           status. Payments are processed by Apple; we do not receive your full payment card details.</li>
         <li><b>Device and usage data.</b> Device model, operating system version, app version,
           language, approximate region, crash logs, and basic analytics about how features are used.</li>
-        <li><b>Identifiers.</b> A randomly generated app or device identifier used to associate your
-          credits and creations with your installation.</li>
+        <li><b>Identifiers.</b> An anonymous, randomly generated identifier used to associate your
+          credits and creations with your installation. This identifier is not linked to your name,
+          email address, or other directly identifying information.</li>
       </ul>
       <p>The Service is designed to work without requiring you to create an account or provide your
         name, and we do not ask for more personal information than is necessary.</p>
@@ -67,61 +63,135 @@
       </ul>
 
       <h2>3. AI processing and third-party providers</h2>
-      <p>Generating videos and images requires sending your prompts and uploaded photos to
-        third-party artificial-intelligence and cloud infrastructure providers that perform the
-        generation on our behalf. These providers process your content only to deliver the requested
-        result and are bound by their own terms and privacy commitments. We do not sell your content.</p>
+      <p>To generate a video or image, the app sends your uploaded photo(s) and text prompt over an
+        encrypted HTTPS connection to our backend service, which runs on <b>Cloudflare Workers</b>.
+        Your photo is stored temporarily in <b>Cloudflare R2</b> (our cloud storage) and is retrieved,
+        via a short-lived access link that expires after approximately one hour, by the third-party AI
+        generation provider that renders your result. Depending on the template or model you select,
+        that provider is one of the following:</p>
+      <ul>
+        <li><b>EvoLink</b> — AI video and image generation.
+          <a href="https://evolink.ai/privacy" target="_blank" rel="noopener">EvoLink Privacy Policy</a></li>
+        <li><b>fal.ai</b> — AI video generation.
+          <a href="https://fal.ai/privacy" target="_blank" rel="noopener">fal.ai Privacy Policy</a></li>
+      </ul>
+      <p>These providers process your photos and prompts solely to produce the result you requested
+        and handle data in accordance with their own privacy policies. We do not sell your content,
+        and we do not send your photos or prompts to any AI provider other than those listed above.</p>
 
-      <h2>4. How we share information</h2>
+      <h2>4. Face data collection, use, and retention</h2>
+
+      <h3>What face data we collect</h3>
+      <p>The app lets you upload standard photographs from your photo library or camera, and those
+        photos may contain your face (or the face of another person who has given you permission to
+        use their photo, as required by our Terms of Service). We do <b>not</b> collect biometric
+        identifiers, face geometry, depth maps, facial-recognition templates, or any other biometric
+        data. Your photo is handled as a standard image file — no facial mapping or biometric
+        extraction is performed by the app or by our backend at any point.</p>
+
+      <h3>How we use face data</h3>
+      <p>Photos containing faces are used for one purpose only: generating the AI video or image you
+        request from your chosen template or prompt. Face data is <b>never</b> used for facial
+        recognition, identification, identity verification, advertising, or profiling. We do not use
+        your photos to train AI models.</p>
+
+      <h3>Third-party sharing of face data</h3>
+      <p>To perform the generation, your photo is transmitted over HTTPS to our backend (Cloudflare
+        Workers), stored temporarily in Cloudflare R2, and retrieved by the AI generation provider —
+        <b>EvoLink</b> or <b>fal.ai</b>, as described in Section 3 — solely to produce the video or
+        image you requested. <b>No other third parties receive your photos.</b></p>
+
+      <h3>Face data retention, storage, and deletion</h3>
+      <ul>
+        <li>Your uploaded photo is stored in Cloudflare R2 only for as long as needed to complete your
+          generation. It is deleted automatically after your generation completes, and in all cases
+          within 24 hours of upload.</li>
+        <li>Generated videos and images are delivered to and stored on <b>your device</b>. We do not
+          keep a permanent copy of your results on our servers; the provider's temporary download link
+          expires within approximately 24 hours.</li>
+        <li>You can delete your creations at any time from within the app, and deleting the app
+          removes all locally stored content.</li>
+        <li>To request deletion of any data associated with your installation, contact us at
+          <a href="mailto:litilabs@outlook.com">litilabs@outlook.com</a>.</li>
+      </ul>
+
+      <h2>5. How we share information</h2>
       <p>We do not sell your personal information. We share information only:</p>
       <ul>
-        <li>With service providers (such as AI generation, cloud hosting, and analytics vendors) who
-          process data on our behalf.</li>
+        <li>With the service providers named in Sections 3 and 7 (AI generation, cloud hosting,
+          analytics, and subscription-management vendors) who process data on our behalf.</li>
         <li>With Apple, for payments, subscriptions, and app distribution.</li>
         <li>When required by law, legal process, or to protect the rights, safety, and property of
-          users, the public, or [Company Name].</li>
+          users, the public, or Anywhere Studio.</li>
         <li>In connection with a merger, acquisition, or sale of assets, subject to this Policy.</li>
       </ul>
 
-      <h2>5. Data retention and deletion</h2>
-      <p>We retain your uploaded content and generated results for as long as needed to provide the
-        Service, and for a limited period afterward to support troubleshooting and abuse prevention.
-        You can delete your creations within the app. To request deletion of your data, contact us at
-        <a href="mailto:litilabs@outlook.com">litilabs@outlook.com</a>.</p>
+      <h2>6. Data retention and deletion</h2>
+      <ul>
+        <li><b>Uploaded photos:</b> deleted automatically after your generation completes, and in all
+          cases within 24 hours of upload (see Section 4).</li>
+        <li><b>Generated videos and images:</b> stored on your device; we do not keep a permanent
+          server-side copy.</li>
+        <li><b>Generation records:</b> we keep basic records of your generation requests (such as the
+          selected template or model, job status, credit transactions, and timestamps) for as long as
+          needed to operate credits, troubleshoot problems, and prevent abuse or fraud.</li>
+        <li><b>Deletion requests:</b> you can delete your creations within the app; to request
+          deletion of other data, contact us at
+          <a href="mailto:litilabs@outlook.com">litilabs@outlook.com</a>.</li>
+      </ul>
 
-      <h2>6. Your rights and choices</h2>
+      <h2>7. Third-party services</h2>
+      <p>We use the following third-party services, which may process data in accordance with their
+        own privacy policies:</p>
+      <ul>
+        <li><b>Cloudflare</b> — backend hosting and temporary storage of uploads.
+          <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare Privacy Policy</a></li>
+        <li><b>EvoLink</b> — AI video and image generation.
+          <a href="https://evolink.ai/privacy" target="_blank" rel="noopener">EvoLink Privacy Policy</a></li>
+        <li><b>fal.ai</b> — AI video generation.
+          <a href="https://fal.ai/privacy" target="_blank" rel="noopener">fal.ai Privacy Policy</a></li>
+        <li><b>Google Firebase</b> — anonymous sign-in, analytics, crash reporting, and remote
+          configuration.
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a></li>
+        <li><b>RevenueCat</b> — subscription and credit management.
+          <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a></li>
+        <li><b>Apple</b> — payments, subscriptions, and app distribution.
+          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Privacy Policy</a></li>
+      </ul>
+
+      <h2>8. Your rights and choices</h2>
       <p>Depending on where you live, you may have rights to access, correct, delete, or restrict the
         processing of your personal information, and to object to certain uses. To exercise these
         rights, contact us at <a href="mailto:litilabs@outlook.com">litilabs@outlook.com</a>. You can also manage
         subscriptions and purchases through your Apple ID settings.</p>
 
-      <h2>7. Children's privacy</h2>
+      <h2>9. Children's privacy</h2>
       <p>The Service is not directed to children under the age required by your local law (for example,
         13, or 16 in some regions). We do not knowingly collect personal information from children
         below that age. If you believe a child has provided us information, contact us and we will
         delete it.</p>
 
-      <h2>8. Security</h2>
-      <p>We use reasonable technical and organizational measures to protect your information. However,
-        no method of transmission or storage is completely secure, and we cannot guarantee absolute
-        security.</p>
+      <h2>10. Security</h2>
+      <p>We use reasonable technical and organizational measures to protect your information,
+        including encrypted (HTTPS) transmission of your photos and prompts. However, no method of
+        transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
 
-      <h2>9. Payments</h2>
+      <h2>11. Payments</h2>
       <p>Purchases and subscriptions are processed by Apple through the App Store. Your payment
         details are handled by Apple under Apple's terms and privacy policy; we receive only the
         information needed to confirm and manage your purchase.</p>
 
-      <h2>10. International transfers</h2>
+      <h2>12. International transfers</h2>
       <p>Your information may be processed in countries other than your own, including by our service
         providers. Where required, we take steps to ensure appropriate safeguards are in place.</p>
 
-      <h2>11. Changes to this Policy</h2>
+      <h2>13. Changes to this Policy</h2>
       <p>We may update this Privacy Policy from time to time. When we do, we will revise the
         "Last updated" date above and, where appropriate, provide additional notice within the app.</p>
 
-      <h2>12. Contact us</h2>
-      <p>If you have questions about this Privacy Policy or our data practices, contact us at
-        <a href="mailto:litilabs@outlook.com">litilabs@outlook.com</a> or [Company Name], [Company Address].</p>
+      <h2>14. Contact us</h2>
+      <p>If you have questions about this Privacy Policy or our data practices, contact Anywhere
+        Studio at <a href="mailto:litilabs@outlook.com">litilabs@outlook.com</a>.</p>
 
       <div class="legal-foot-links">
         <a href="terms.html">Terms of Service</a>

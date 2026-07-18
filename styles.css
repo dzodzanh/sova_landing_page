@@ -304,6 +304,7 @@ section { padding: 64px 0; }
   font-size: 13.5px; color: var(--dim); line-height: 1.6;
 }
 .legal-doc h2 { font-size: 21px; font-weight: 700; letter-spacing: -0.3px; margin: 36px 0 12px; }
+.legal-doc h3 { font-size: 16.5px; font-weight: 700; letter-spacing: -0.2px; margin: 24px 0 8px; }
 .legal-doc p { font-size: 15px; color: var(--val); margin: 12px 0; line-height: 1.7; }
 .legal-doc ul { margin: 12px 0 12px 22px; }
 .legal-doc li { font-size: 15px; color: var(--val); margin: 7px 0; line-height: 1.6; }
