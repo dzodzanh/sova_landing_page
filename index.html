@@ -10,7 +10,10 @@
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
-<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&display=swap">
+<link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
 
@@ -18,7 +21,7 @@
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="index.html" aria-label="Hootz AI home">
-      <span class="logo"><img src="assets/icon.png?v=2" alt="Hootz AI app icon" width="28" height="28"></span>
+      <span class="logo"><img src="assets/icon.png?v=2" alt="Hootz AI app icon" width="30" height="30"></span>
       <b>Hootz AI</b>
     </a>
     <nav class="nav-links" aria-label="Primary">
@@ -34,7 +37,7 @@
 <section class="hero" id="top">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow"><i></i> AI prank video maker</span>
+      <span class="eyebrow glass"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg> AI prank video maker</span>
       <h1>Make AI <span class="hl">prank videos</span> from any photo.</h1>
       <p class="lead">Turn a photo or a quick idea into a funny, share-ready AI video in seconds.
         Pick a viral template, add your photo, and post it everywhere.</p>
@@ -50,9 +53,11 @@
 
     <!-- phone preview (real app screenshot) -->
     <div class="phone-stage">
+      <span class="float-chip a"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></svg></span>Seedance, Veo, Kling &amp; more</span>
+      <span class="float-chip b"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>Ready in seconds</span>
       <img class="hero-shot"
-           src="assets/screens/movie-generator.jpg"
-           alt="Hootz AI app turning a photo into an AI movie"
+           src="assets/screens/1-any-100k.jpg"
+           alt="Hootz AI: any idea, 100K+ effort-free AI videos"
            width="300" height="650" loading="eager" fetchpriority="high">
     </div>
   </div>
@@ -67,33 +72,33 @@
       <p>Built to be fun and social — fast enough to post before the moment passes.</p>
     </div>
     <div class="features">
-      <div class="feature">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 9.5a3 3 0 0 1 6 0c0 2-3 2.5-3 4"/><circle cx="12" cy="17" r="0.6" fill="currentColor"/></svg></div>
+      <div class="feature card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg></div>
         <h3>Funny prank videos</h3>
         <p>Drop in a photo and turn yourself or a friend into a hilarious AI prank clip.</p>
       </div>
-      <div class="feature">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 4.5L18 9l-4.2 1.5L12 15l-1.8-4.5L6 9l4.2-1.5L12 3z"/><path d="M5 17l.8 2L8 20l-2.2.8L5 23l-.8-2.2L2 20l2.2-1L5 17z"/></svg></div>
+      <div class="feature card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5zM3 13l9 5 9-5"/></svg></div>
         <h3>Viral templates</h3>
         <p>Pranks, trends, and dances ready to go — just pick one and make it yours.</p>
       </div>
-      <div class="feature">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="14" height="14" rx="2"/><path d="M17 9l4-2v10l-4-2"/></svg></div>
+      <div class="feature card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7M17 14l2 2 2-2M19 10v6"/></svg></div>
         <h3>Text &amp; image to video</h3>
         <p>Describe an idea or start from a photo. Hootz AI turns it into a video in seconds.</p>
       </div>
-      <div class="feature">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.3 3.6-5 8-5s8 1.7 8 5"/></svg></div>
+      <div class="feature card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0"/></svg></div>
         <h3>Selfie to video</h3>
         <p>Upload a selfie and watch AI transform it into a stylized, scroll-stopping video.</p>
       </div>
-      <div class="feature">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l5-9 4 6 2-3 5 6"/><path d="M3 21h18"/></svg></div>
+      <div class="feature card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7M16 6l-4-4-4 4M12 2v13"/></svg></div>
         <h3>Made for social</h3>
         <p>Vertical, ready for TikTok, Reels and Shorts. Share straight from your phone.</p>
       </div>
-      <div class="feature">
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+      <div class="feature card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
         <h3>One tap, one result</h3>
         <p>No timelines, no settings overload. One clear tap gives you one finished clip.</p>
       </div>
@@ -109,17 +114,17 @@
       <h2>Three taps to a finished video</h2>
     </div>
     <div class="steps">
-      <div class="step">
+      <div class="step card">
         <div class="n">1</div>
         <h3>Pick or describe</h3>
         <p>Choose a prank template from the feed, or just describe the video you want to create.</p>
       </div>
-      <div class="step">
+      <div class="step card">
         <div class="n">2</div>
         <h3>Add your photo</h3>
         <p>Drop in one photo to star in it. No prompt-engineering or editing skills required.</p>
       </div>
-      <div class="step">
+      <div class="step card">
         <div class="n">3</div>
         <h3>Generate &amp; share</h3>
         <p>Tap generate, get one share-ready video in seconds, and post it everywhere.</p>
@@ -138,12 +143,14 @@
     </div>
   </div>
   <div class="showcase-rail">
-    <img class="show-shot" src="assets/screens/movie-generator.jpg" alt="AI movie generator, built on Seedance" width="220" height="477" loading="lazy">
-    <img class="show-shot" src="assets/screens/puppy-dance.jpg" alt="Puppy dance generator, built on Sora 2" width="220" height="477" loading="lazy">
-    <img class="show-shot" src="assets/screens/epic-pranks.jpg" alt="Epic pranks video, built on Veo 3" width="220" height="477" loading="lazy">
-    <img class="show-shot" src="assets/screens/animation-maker.jpg" alt="AI animation maker" width="220" height="477" loading="lazy">
-    <img class="show-shot" src="assets/screens/kbo-cam.jpg" alt="KBO cam video with a before-and-after face" width="220" height="477" loading="lazy">
-    <img class="show-shot" src="assets/screens/world-cup.jpg" alt="World cup moment video with a before-and-after face" width="220" height="477" loading="lazy">
+    <img class="show-shot" src="assets/screens/1-any-100k.jpg" alt="Any idea, 100K+ AI videos, effort free" width="220" height="477" loading="lazy">
+    <img class="show-shot" src="assets/screens/2-idea-ai-generated.jpg" alt="Your idea, AI generated" width="220" height="477" loading="lazy">
+    <img class="show-shot" src="assets/screens/3-real-videos.jpg" alt="Real-looking AI videos" width="220" height="477" loading="lazy">
+    <img class="show-shot" src="assets/screens/4-superhero-in-action.jpg" alt="Superhero in action: turn me into Spider-Man free falling over the city" width="220" height="477" loading="lazy">
+    <img class="show-shot" src="assets/screens/5-prank-for-real.jpg" alt="Prank for real: make my grandma drive the car really fast" width="220" height="477" loading="lazy">
+    <img class="show-shot" src="assets/screens/6-stunning-animation.jpg" alt="Make stunning animation: a tearful girl running through the city at night" width="220" height="477" loading="lazy">
+    <img class="show-shot" src="assets/screens/7-fan-cam-moment.jpg" alt="Fan cam moment at a baseball game" width="220" height="477" loading="lazy">
+    <img class="show-shot" src="assets/screens/8-cute-puppy-dance.jpg" alt="Cute puppy dance in a banana costume" width="220" height="477" loading="lazy">
   </div>
   <div class="wrap"><p class="showcase-caption">Example results made with Hootz AI. Templates and trends update inside the app.</p></div>
 </section>
@@ -152,6 +159,22 @@
 <section>
   <div class="wrap">
     <div class="cta-band">
+      <div class="mascot" aria-hidden="true">
+        <svg viewBox="80 90 820 780">
+          <path d="M196 244L362 204Q378 200 386 214L418 270Q426 284 442 282L590 262Q606 258 604 242L596 168Q594 150 610 146L772 108Q794 104 798 126L884 830Q886 856 862 856L594 856Q572 856 576 834L616 616Q618 594 596 594L432 594Q408 594 414 616L478 830Q484 856 460 856L116 856Q92 856 96 832L180 264Q184 248 196 244Z" fill="#fff"/>
+          <g class="eyes">
+            <ellipse cx="462" cy="384" rx="40" ry="62" transform="rotate(-14 462 384)" fill="#050607"/>
+            <ellipse cx="568" cy="398" rx="30" ry="44" transform="rotate(-8 568 398)" fill="#050607"/>
+            <g class="pupils">
+              <ellipse cx="482" cy="380" rx="13" ry="20" transform="rotate(-20 482 380)" fill="#fff"/>
+              <ellipse cx="568" cy="396" rx="11" ry="18" fill="#fff"/>
+            </g>
+          </g>
+          <path d="M386 478Q380 456 410 458L620 466Q650 468 644 492Q620 548 512 548Q410 546 386 478Z" fill="#050607"/>
+          <rect x="458" y="468" width="42" height="36" rx="4" fill="#fff"/>
+          <rect x="530" y="470" width="46" height="34" rx="4" fill="#fff"/>
+        </svg>
+      </div>
       <h2>Your next viral video is one photo away</h2>
       <p>Download Hootz AI and make your first AI prank video in seconds.</p>
       <div class="actions">
@@ -165,22 +188,22 @@
 </section>
 
 <!-- ===== FAQ ===== -->
-<section id="faq">
+<section id="faq" class="faq">
   <div class="wrap">
     <div class="sec-head">
       <div class="kicker">FAQ</div>
       <h2>Good to know</h2>
     </div>
     <div class="steps">
-      <div class="step">
+      <div class="step card">
         <h3>Do I need a photo?</h3>
         <p>No. You can describe an idea (text to video) or add one photo to star in it.</p>
       </div>
-      <div class="step">
+      <div class="step card">
         <h3>How long does it take?</h3>
         <p>Most videos generate in seconds. You get one finished result, ready to share.</p>
       </div>
-      <div class="step">
+      <div class="step card">
         <h3>What platforms is it for?</h3>
         <p>Videos are vertical and built for TikTok, Instagram Reels and YouTube Shorts.</p>
       </div>
@@ -194,7 +217,7 @@
     <div class="footer-grid">
       <div>
         <a class="brand" href="index.html">
-          <span class="logo"><img src="assets/icon.png?v=2" alt="Hootz AI app icon" width="28" height="28"></span>
+          <span class="logo"><img src="assets/icon.png?v=2" alt="Hootz AI app icon" width="30" height="30"></span>
           <b>Hootz AI</b>
         </a>
         <p class="ftagline">Turn ideas and photos into AI videos in seconds.</p>
